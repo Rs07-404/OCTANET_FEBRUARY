@@ -1,0 +1,271 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+body{
+    background-image: linear-gradient(to bottom right,black,#6900a6);
+    background-repeat: no-repeat;
+}
+
+.header{
+    display: flex;
+    height: 6rem;
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(30px);
+    width: 100%;
+}
+
+.logo{
+    padding: 1rem;
+    height: 64px;
+    width: 64px;
+}
+
+.logo > img{
+    height: 64px;
+    width: 64px;
+    animation: ttb 2s;
+}
+
+.left{
+    display: flex;
+    flex: 1;
+}
+
+.title{
+    height: 100%;
+    width: max-content;
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.nav{
+    display: flex;
+    height: max-content;
+    gap: 2rem;
+    align-content: center;
+    justify-content: center;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: large;
+    margin: 1rem;
+}
+
+.nav > div> a{
+    text-decoration: none;
+    transition: 1s;
+}
+
+.nav > div>a:hover{
+    font-size: x-large;
+    font-weight:bolder; 
+}
+
+.front{
+    display: flex;
+    width: 90%;
+    padding: 4rem;
+    gap: 4rem;
+    padding-top: 11rem;
+    animation: ltr 1s;
+}
+
+.front > div > img{
+    height: max-content;
+    width: 35rem;
+    object-fit: contain;
+    border: none;
+    border-radius: 2rem;
+    transition: 1s;
+    animation: ltr 1s;
+}
+
+
+.title_p{
+    width: 20%;
+    font-size: 3rem;
+    padding: 1rem;
+    height: max-content;
+    font-weight: bold;
+}
+
+.show_cont > .des{
+    padding: 1rem;
+    font-weight: bold;
+    width: max-content;
+}
+
+.show_cont > .brief{
+    padding: 1rem;
+    padding-top: 0;
+    width: 80%;
+}
+
+.box{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    padding-top: 0;
+    font-weight: bold;
+    width: max-content;
+}
+
+.btn_white{
+    display: flex;
+    padding: 1rem;
+    width: max-content;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 13px;
+    justify-content: center;
+}
+
+.btn_black{
+    display: flex;
+    padding: 1rem;
+    width: max-content;
+    background-color: black;
+    color: #ffffff;
+    border: 1px solid ;
+    border-radius: 13px;
+    justify-content: center;
+}
+
+.cardspace{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3rem 5rem 3rem 5rem;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.4);
+    /* backdrop-filter: blur(5px); */
+    border-radius: 24px;
+    align-self: flex-end;
+}
+
+
+.card_big{
+    display: flex;
+    flex-direction: column;
+    height: 25rem;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.4);
+    /* backdrop-filter: blur(5px); */
+    border-radius: 24px;
+}
+
+.card_upper{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.card_upper > img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.card_lower{
+    flex: 1;
+    background-color: white;
+    border-radius: 0 0 13px 13px;
+    padding: 1rem;
+    color: black;
+}
+
+.mid > .box{
+    display: flex;
+    width: 97%;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+footer{
+    display: block;
+    padding-top: 2rem;
+}
+
+.footer{
+    display: flex;
+}
+
+.brand{
+    display: block;
+    flex: 2;
+}
+
+.brand > .brief{
+    width: 80%;
+    padding: 1rem;
+}
+
+.fleft{
+    display: flex;
+    flex:1;
+    gap: 5rem;
+    padding: 1rem;
+}
+
+.list{
+    padding: 1rem;
+}
+
+.list > div{
+    padding-bottom: 2rem;
+}
+
+.list > .h3{
+    font-size: large;
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+
+footer > .bbox{
+    display: flex;
+    padding: 1rem;
+}
+
+.brand_logo{
+    display: flex;
+}
+
+.bbox > .log_bar{
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.bbox > .aside{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.log_bar .s-logo, 
+img{
+    height: 24px;
+    width: 24px;
+}
+
+@keyframes ltr {
+    from {left: -100px; opacity:0.5; position: relative;}
+    to {left: 0px; opacity:1; position: relative;}
+}
+
+@keyframes ttb {
+    from {top: -100px; opacity:0.5; position: relative;}
+    to {top: 0px; opacity:1; position: relative;}
+}
