@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="header">
+        <div class="label">To Do List</div>
+        <div class="nav">
+            <div>Home</div>
+            <div>About</div>
+            <div><a onclick="location.reload();">Reset</a></div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="title">Take Control of your Time⌚: Start Ticking Off Tasks Today!</div>
+        <div class="form">
+            <div><input type="text" id="taskInput" placeholder="Add a new task ✏️"></div>
+            <div><button class="btn" onclick="addTask()">Add Task</button></div>
+        </div>
+        <ul class="task_container" id="task_c">
+            <div>Tasks</div>
+        </ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

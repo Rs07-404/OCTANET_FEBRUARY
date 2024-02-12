@@ -1,0 +1,130 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: 1s;
+}
+
+.header{
+    display: flex;
+    background-size: cover;
+}
+
+.nav{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.label{
+    flex: 1;
+    font-size: xx-large;
+    padding: 1rem;
+    font-weight: bold;
+
+}
+
+.nav > div{
+    flex: 1;
+    padding: 1rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 87vh;
+    min-width: 87vh;
+    background-color: rgb(0, 140, 255);
+}
+
+.title{
+    display: flex;
+    font-size: x-large;
+    justify-content: center;
+    /* color: white; */
+    margin-top: 5rem;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+
+.form input{
+    width: 80vh;
+    padding: 10px;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    font-weight: bold;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+.btn{
+    padding: 10px;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    background-color: blueviolet;
+    color: white;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: rgb(96, 33, 155);
+}
+
+.task_container{
+    display: block;
+    backdrop-filter: blur(8px);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 2px 8px 32px rgba(0, 0, 0, 0.254);
+    min-width: 40rem;
+    max-width: max-content;
+    border-top: 1rem solid white;
+    /* box-shadow: inset 1px 1px 8px grey; */
+}
+
+.task_container > li{
+    display: flex;
+    border-bottom: 1px solid black;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul{
+    margin: 1rem;
+}
+
+li div{
+    margin: 1rem;
+    margin-bottom: 0;
+}
+
+ul > div{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.delete{
+    aspect-ratio: 1;
+    height: 24px;
+    border-radius: 5px;
+    background-color: black;
+    border: none;
+}
+
+.delete:hover{
+    background-image: url('images/check.png');
+    background-position: center;
+    box-shadow: 2px 8px 32px black;
+}
